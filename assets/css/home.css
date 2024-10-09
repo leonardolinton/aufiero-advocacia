@@ -1,0 +1,90 @@
+#home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../img/banner_02.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: screen;
+    /* filter: grayscale(100%); */
+
+}
+
+#home::after {
+    content: '';
+    width: inherit;
+    max-height: inherit;
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.158);
+}
+
+.home-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    width: 1440px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-box h1 {
+    font-size: var(--h1-font-size);
+    font-weight: 700;
+    line-height: 100%;
+    color: var(--color-01);
+    text-transform: capitalize;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-family: "Merriweather", serif;
+
+}
+
+.home-box p {
+    font-weight: 300;
+    font-size: var(--f1-font-size);
+    max-width: 900px;
+    color: var(--color-01);
+    line-height: 150%;
+    text-align: justify;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.home-btn{
+    padding: 1rem 2.5rem;
+    background-color: white;
+    border: solid 2px white;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: 0.5s ease-out;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.home-btn:hover {
+    background-color: transparent;
+    color: white;
+}
+
+
+@media (max-width: 1400px) {
+    #home{
+        padding: 0 5vw;
+    }
+
+    .home-box {
+        gap: 2rem;
+    }
+
+    .home-btn{
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,166 @@
+#areas{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.areas-box{
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    padding: 7.5vh 0 2.5vh;
+    overflow: hidden;
+    
+}
+
+.areas-box-cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.areas-box-card{
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+    background-color: #363636;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.areas-box-card-content{
+    height: 100%;
+    border: solid white 1px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+   
+}
+
+.areas-box-card h4{
+    font-family: "Merriweather", serif;
+}
+
+.areas-box-card img{
+    width: 50px;
+    height: 50px;
+}
+
+.areas-box-card span{
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.areas-box-card a{
+    color: #2A303A;
+    padding: 5px 15px;
+    border-radius: 50px;
+    background-color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.diretos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 10vh;
+    overflow-x: hidden;
+}
+
+.diretos section{
+    max-width: 1440px;
+    padding: 0 5%;
+}
+
+.diretos-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2.5vh;
+}
+
+.diretos-box-left{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2.5vh;
+}
+
+.diretos-box-left h1{
+    font-size: 2.5rem;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+}
+
+.diretos-box-left p{
+    font-size: 1rem;
+    line-height: 150%;
+    text-align: justify;
+}
+
+.diretos-box-left a{
+    background-color: #363636;
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    font-family: "Merriweather", serif;
+}
+
+.direito-box-right{
+    max-width: 500px;
+}
+
+.direito-box-right img{
+    width: 100%;
+}
+
+@media screen and (max-width: 1440px){
+    #ares{
+        padding: 0 5vw;
+    }
+
+    .diretos-box{
+        flex-direction: column-reverse;
+    }
+
+    .diretos-box-left{
+        width: 100%;
+        align-items: center;
+    }
+
+    .areas-box-cards{
+        gap: 3rem;
+    }
+}
+
+
+
+@media screen and (max-width: 550px){
+    .areas-box-cards{
+        gap: 1rem;
+    
+    }
+
+    .areas-box-card{
+        width: 90%;
+        height: 200px;
+    }
+}

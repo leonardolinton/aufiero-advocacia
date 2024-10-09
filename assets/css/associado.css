@@ -1,0 +1,116 @@
+#advogado {
+    min-height: 100vh;
+    width: 100%;
+    padding: 15vh 0 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/banner_01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+#advogado::after {
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    inset: 0;
+    background: #0000008a;
+}
+
+.advogado-box {
+    max-width: 1440px;
+    margin: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 2rem;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    z-index: 2;
+}
+
+
+
+
+.advogado-box-left img {
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.advogado-box-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 60%;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    color: rgb(231, 231, 231);
+
+    
+}
+
+.advogado-box-right h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: "Merriweather", serif;
+    
+    
+}
+
+.advogado-box-right p{
+    font-size: 1.5rem;
+
+}
+
+
+.advogado-box-right li {
+    list-style: inside;
+    text-align: justify;
+    list-style-position: initial;
+}
+
+.advogado-box-right {
+    list-style: disc;
+
+}
+
+
+@media (max-width: 1000px) {
+    .advogado-box{
+        flex-direction: column;
+        padding: 1rem;
+        width: 95%;
+    }
+
+    .advogado-box-left img{
+        width: 100%;
+    }
+
+    .advogado-box-right{
+        width: 80%;
+    }
+
+    .advogado-box-right h2{
+        font-size: 1.5rem;
+    }
+
+    .advogado-box-right h3{
+        font-size: 1.1rem;
+    }
+
+    .advogado-box-right li{
+        font-size: 0.9rem;
+    }
+}
