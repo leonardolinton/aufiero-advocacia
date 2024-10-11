@@ -1,5 +1,6 @@
-/*========== GOOGLE FONTS - ZILLA SLAB ==========*/
+/*========== GOOGLE FONTS - POPPINS ==========*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*========== GOOGLE FONTS - MERRIWEATHER ==========*/
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap');
 
 @import url("./header.css");
@@ -12,6 +13,7 @@
 @import url("./associado.css");
 @import url("./mapa.css");
 @import url("./footer.css");
+@import url("./saiba.css");
 
 /*============ CONFIGURAÇÕES DEFAULT ============*/
 * {
@@ -21,7 +23,7 @@
   text-decoration: none;
   box-sizing: border-box;
   list-style: none;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-text);
 }
 
 html {
@@ -32,7 +34,7 @@ body {
   min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
-  background-color: #eaecf0;
+  background-color: var(--bg-color);
 }
 
 main{
@@ -40,21 +42,29 @@ main{
   overflow-x: hidden;
 }
 
+
+/*========== SELEÇÃO =========*/
 ::selection {
-  background-color: #252525;
-  color: white;
+  background-color: var(--color-03);
+  color: var(--color-01);
 }
 
+/*========== BARRA DE ROLAGEM ==========*/
+
+/* LARGURA DA BARRA */
 body::-webkit-scrollbar {
   width: 10px;
   
+}
+
+
+/* COR DA BARRA */
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-02);
   
 }
 
+/* BACKGROUND DA BARRA */
 body::-webkit-scrollbar-track {
-  background: rgb(180, 180, 180);  
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #252525;
+  background: var(--color-01); 
 }

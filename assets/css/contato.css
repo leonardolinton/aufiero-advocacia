@@ -1,222 +1,238 @@
 /*============ CONTATO SECTION START ============*/
 
 #contato {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10vh 0;
+  gap: 10vh;
+}
+
+#contato .contato-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contato .contato-title h2 {
+  font-size: var(--h2);
+  font-weight: var(--fs-b);
+  color: var(--color-03);
+  font-family: var(--font-title);
+}
+
+#contato .contato-box {
+  width: var(--max-width);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  padding: 0 5%;
+}
+
+.contato-redes {
+  display: flex;
+  gap: 1.5rem;
+}
+
+#contato .item-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#contato .contato-box-left {
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#contato .contato-list li {
+  margin: 40px;
+}
+
+#contato .contato-list li h3 {
+  color: var(--color-03);
+  font-family: var(--font-title);
+  font-size: var(--h3);
+  font-weight: var(--fs-b);
+  margin-bottom: 10px;
   
-  #contato .contato-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+.contato-redes ion-icon {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--color-02);
+  transition: 0.1s ease-in-out;
+}
+
+.contato-redes ion-icon:hover {
+  color:var(--color-03);
+}
+
+#contato .contato-list p {
+  font-size: var(--fs1);
+  font-weight: var(--fs-m);
+  color: var(--color-02);
+
+}
+
+#contato .contato-box-right {
+  width: 50%;
+  padding: 40px;
+  background-color: var(--color-02);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 5px;
+}
+
+#contato .contact-form input {
+  display: flex;
+  align-items: center;
+}
+
+#contato .contact-form input,
+#contato .contact-form textarea {
+  border: none;
+  color: var(--color-03);
+  background: var(--color-01);
+  font-size: 1rem;
+  margin-bottom: 20px;
+  padding: 1rem;
+  border: solid 2px transparent;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+#contato .contact-form ::placeholder {
+  color: rgba(29, 29, 29, 0.527);
+  font-size: var(--fs1);
+  font-weight: var(--fs-m);
+}
+
+
+#contato .contact-form input:focus,
+#contato .contact-form textarea:focus {
+  border: solid 2px #31313196;
+}
+
+#contato .contact-form textarea {
+  width: 100%;
+  height: 25vh;
+  resize: none;
+}
+
+
+#contato .contact-form .first-row input {
+  width: 100%;
+}
+
+#contato .contact-form .second-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contato .contact-form .second-row input {
+  width: 49%;
+}
+
+#contato .contact-form .form-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  border-radius: 5px;
+  border: solid 2px transparent;
+  padding: 15px;
+
+  cursor: pointer;
+
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: var(--color-01);
+  color: var(--color-02);
+
+  transition: 0.5s;
+}
+
+#contato .contact-form .form-btn:hover {
+  border: solid 2px rgba(0, 0, 0, 0.568);
+}
+
+/*============ CONTATO SECTION END ============*/
+
+/*============ CONTATO SECTION RESPONSIVE ============*/
+
+@media screen and (max-width: 1440px) {
+  #contato {
+    gap: 5vh;
   }
-  
+
   #contato .contato-title h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin: 5vh 0;
-    color: #3f3f44;
-    font-family: "Merriweather", serif;
+    font-size: 2rem;
   }
-  
+
+  #contato .contato-title span {
+    font-size: var(--fm3-font-size);
+  }
+
   #contato .contato-box {
-    width: 1440px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 35px;
+    width: 100%;
     padding: 0 5%;
-  }
-
-  .contato-redes{
-    display: flex;
-    gap: 1.5rem;
-  }
-
-  .contato-redes ion-icon{
-    font-size: 2.5rem;
-    cursor: pointer;
-    color: #7A7A84;
-    transition: 0.1s ease-in-out;
-  }
-
-  .contato-redes ion-icon:hover{
-    color: #3f3f44;
-  }
-  
-  #contato .item-title {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  #contato .contato-box-left {
-    width: 40%;
-  
-    display: flex;
     flex-direction: column;
   }
-  
-  #contato .contato-list li {
-    margin: 40px;
-  }
-  
-  #contato .contato-list li h3 {
-    font-family: "Merriweather", serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #3f3f44;
-  }
-  
-  #contato .contato-list span {
-    font-size: 1rem;
-    color: rgb(104, 104, 104);
 
+  #contato .contato-box-left {
+    width: 100%;
   }
-  
+
   #contato .contato-box-right {
-    width: 50%;
-    padding: 40px;
-    background-color: #91919c;
-    border-radius: 5px;
+    margin-top: 2.5vh;
+    padding: 10px;
+    width: 100%;
   }
-  
-  #contato .contact-form input {
+
+  #contato .contato-list li {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    margin: 15px;
   }
-  
+
+  #contato .contato-list li h3 {
+    display: flex;
+
+    font-size: var(--fm2-font-size);
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  #contato .contato-list span {
+    font-size: var(--fm3-font-size);
+    color: var(--secondary-color);
+  }
+
   #contato .contact-form input,
   #contato .contact-form textarea {
-    border: none;
-    color: gray;
-    background: #f0f0f0;
-    font-size: 1rem;
-    margin-bottom: 20px;
-    padding: 1rem;
-    border: solid 2px transparent;
-    outline: none;
-    border-radius: 5px;
-    transition: 0.3s ease-in-out;
-  }
-  
-  #contato .contact-form ::placeholder {
-    color: grey;
-    font-size: 1rem;
-  }
-  
-
-  #contato .contact-form input:focus,
-  #contato .contact-form textarea:focus {
-    border: solid 2px #31313196;
-  }
-  
-  #contato .contact-form textarea {
-    width: 100%;
-    height: 25vh;
-    resize: none;
+    font-size: var(--fm3-font-size);
+    margin: 5px 0px;
+    padding: 10px;
   }
 
-  
-  #contato .contact-form .first-row input {
-    width: 100%;
-  }
-  
-  #contato .contact-form .second-row {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  #contato .contact-form .second-row input {
-    width: 49%;
-  }
-  
   #contato .contact-form .form-btn {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: var(--fm2-font-size);
+  }
+}
 
-    border-radius: 5px;
-    border: solid 2px transparent;
-    padding: 15px;
-  
-    cursor: pointer;
-  
-    font-size: 1rem;
-    font-weight: 500;
-    background-color: #f0f0f0;
-    color: rgb(77, 77, 77);
-  
-    transition: 0.5s;
+@media screen and (max-width: 900px) {
+
+  .contato-redes ion-icon {
+    font-size: 2rem;
   }
-  
-  #contato .contact-form .form-btn:hover {
-    border: solid 2px rgba(0, 0, 0, 0.568);
-  }
-  
-  /*============ CONTATO SECTION END ============*/
-  
-  /*============ CONTATO SECTION RESPONSIVE ============*/
-  
-  @media screen and (max-width: 1440px) {
-    #contato .contato-title h2 {
-      font-size: 2rem;
-    }
-  
-    #contato .contato-title span {
-      font-size: var(--fm3-font-size);
-    }
-  
-    #contato .contato-box {
-      width: 100%;
-      padding: 0 5%;
-      flex-direction: column;
-    }
-  
-    #contato .contato-box-left {
-      width: 100%;
-    }
-  
-    #contato .contato-box-right {
-      margin-top: 2.5vh;
-      padding: 10px;
-      width: 100%;
-    }
-  
-    #contato .contato-list li {
-      display: flex;
-      flex-direction: column;
-      margin: 15px;
-    }
-  
-    #contato .contato-list li h3 {
-      display: flex;
-      
-      font-size: var(--fm2-font-size);
-      font-weight: 600;
-      margin-bottom: 5px;
-    }
-  
-    #contato .contato-list span {
-      font-size: var(--fm3-font-size);
-      color: var(--secondary-color);
-    }
-  
-    #contato .contact-form input,
-    #contato .contact-form textarea {
-      font-size: var(--fm3-font-size);
-      margin: 5px 0px;
-      padding: 10px;
-    }
-  
-    #contato .contact-form .form-btn {
-      padding: 10px;
-      width: 100%;
-      font-size: var(--fm2-font-size);
-    }
-  }
+}

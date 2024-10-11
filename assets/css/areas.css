@@ -3,17 +3,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 15vh 0 5vh;
+    overflow: hidden;
 }
 
 .areas-box{
-    width: 1440px;
+    width: var(--max-width);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5vh;
-    padding: 7.5vh 0 2.5vh;
-    overflow: hidden;
-    
 }
 
 .areas-box-cards{
@@ -23,33 +22,34 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-
 }
 
 .areas-box-card{
     width: 250px;
     height: 250px;
     padding: 15px;
-    background-color: #363636;
     border-radius: 5px;
+    background-color: var(--color-02);
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .areas-box-card-content{
     height: 100%;
-    border: solid white 1px;
-    padding: 15px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    padding: 15px;
+    text-align: center;
     border-radius: 5px;
-    color: white;
-   
+    color: var(--color-01);
+    border: solid 1px var(--color-01); 
 }
 
-.areas-box-card h4{
-    font-family: "Merriweather", serif;
+.areas-box-card-content p{
+    font-size: var(--fs1);
+    font-weight: var(--fs-b);
+    font-family: var(--font-title);
 }
 
 .areas-box-card img{
@@ -57,34 +57,33 @@
     height: 50px;
 }
 
-.areas-box-card span{
-    font-size: 0.8rem;
-    font-weight: 400;
-    text-align: justify;
-}
-
-.areas-box-card a{
-    color: #2A303A;
-    padding: 5px 15px;
-    border-radius: 50px;
-    background-color: white;
+.area-box-card-btn {
     font-size: 0.9rem;
     font-weight: 500;
+    padding: 5px 15px;
+    border-radius: 50px;
+    color: var(--color-03);
+    background-color: var(--color-01);
+    transition: 0.3s;
+}
+
+.area-box-card-btn:hover{
+    opacity: 0.7;
 }
 
 .diretos{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    width: 100%;
-    padding-top: 10vh;
     overflow-x: hidden;
 }
 
 .diretos section{
-    max-width: 1440px;
+    max-width: var(--max-width);
     padding: 0 5%;
 }
 
@@ -105,23 +104,28 @@
 }
 
 .diretos-box-left h1{
-    font-size: 2.5rem;
-    font-family: "Merriweather", serif;
-    font-weight: 700;
+    font-size: var(--h1);
+    font-family: var(--font-title);
+    font-weight: var(--fs-b);
 }
 
 .diretos-box-left p{
-    font-size: 1rem;
+    font-size: var(--fs1);
+    font-weight: var(--fs-m);
     line-height: 150%;
     text-align: justify;
 }
 
 .diretos-box-left a{
-    background-color: #363636;
-    color: aliceblue;
+    background-color: var(--color-03);
+    color: var(--color-01);
     border-radius: 5px;
     padding: 0.5rem 1.5rem;
-    font-family: "Merriweather", serif;
+    font-family: var(--font-title);
+}
+
+.diretos-box-left a:hover{
+    opacity: 0.9;
 }
 
 .direito-box-right{
@@ -133,8 +137,9 @@
 }
 
 @media screen and (max-width: 1440px){
-    #ares{
-        padding: 0 5vw;
+    #areas{
+        padding: 11vh 0 5vh;
+        overflow: hidden;
     }
 
     .diretos-box{

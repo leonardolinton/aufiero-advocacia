@@ -10,9 +10,7 @@
     background-attachment: fixed;
     background-size: cover;
     margin: 2.5vh 0;
-
     position: relative;
-
 }
 
 #equipe::after{
@@ -22,11 +20,11 @@
     position: absolute;
     inset: 0;
     border-radius: 5px;
-    background: rgba(0, 0, 0, 0.534);
+    background: rgba(0, 0, 0, 0.541);
 }
 
 .equipe-box {
-    max-width: 1200px;
+    max-width: var(--max-width);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,22 +35,21 @@
 
 .equipe-box h2 {
     margin: 5vh 0;
-    font-size: 2.5rem;
-    font-weight: 400;
+    font-size: var(--h2);
+    font-weight: var(--fs-m);
+    font-family: var(--font-title);
     color: var(--color-01);
     text-shadow: black 0.1em 0.1em 0.2em;
-    font-family: "Merriweather", serif;
 }
 
 
 .slider-wrapper {
     overflow: hidden;
-    margin: 0 70px 55px;
+    margin: 0 80px 55px;
 }
 
 
 .card-list .card-item {
-    color: white;
     width: 400px;
     height: 450px;
     padding: 35px;
@@ -60,6 +57,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: var(--color-01);
     text-align: center;
     border-radius: 5px;
     background: rgba(20, 20, 20, 0.822);
@@ -69,41 +67,49 @@
 }
 
 .card-img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     margin-bottom: 40px;
     border: 2px solid rgba(255, 255, 255, 0.596);
     padding: 4px;
 }
 
-.card-item h3{
-    font-weight: 700;
-    font-family: "Merriweather", serif;
-
+.card-item h4{
+    font-size: var(--h4);
+    font-weight: var(--fs-m);
+    font-family: var(--font-title);
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .card-item p {
-    font-size: 1rem;
-    color: white;
-    font-weight: 300;
+    font-size: var(--fs1);
+    font-weight: var(--fs-l);
     margin: 14px 0 40px;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .card-btn {
-    background-color: rgb(255, 255, 255);
-    color: rgb(49, 49, 49);
-    font-weight: 600;
-    border-radius: 50px;
     cursor: pointer;
+    color: var(--color-03);
     padding: 0.5rem 1.5rem;
-    font-family: "Merriweather", serif;
+    font-size: var(--fs1);
+    font-weight: var(--fs-b);
+    font-family: var(--font-title);
+    border-radius: 50px;
+    background-color: var(--color-01);
+
+    transition: 0.3s ease-in-out;
+}
+
+.card-btn:hover{
+    opacity: 0.7;
 }
 
 .swiper-pagination-bullet {
     margin: 0;
     padding: 0;
-    color: aliceblue;
+    color: var(--color-01);
 }
 
 .slider-wrapper .swiper-pagination-bullet {
@@ -133,7 +139,4 @@
         display: none;
     }
 
-    .equipe-box h2{
-        font-size: 2rem;
-    }
 }

@@ -4,21 +4,21 @@
     align-items: center;
     justify-content: center;
     padding: 2.5vh 0;
-    background-color: #212121;
+    background-color: var(--color-03);
     overflow: hidden;
+    z-index: 2;
 }
 
 #rodape span{
-    color: white;
-    font-weight: 300;
-    font-size: 0.8rem;
+    color: var(--color-01);
+    font-weight: var(--fs-l);
+    font-size: var(--fs2);
     text-align: center;
 }
 
 @media (max-width: 1400px) {
     #rodape{
         padding: 2.5vh 5%;
-        background-color: #212121;
     }
     
 }
