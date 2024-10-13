@@ -8,6 +8,7 @@
   justify-content: space-between;
   padding: 10vh 0;
   gap: 10vh;
+  background-color: var(--color-03);
 }
 
 #contato .contato-title {
@@ -19,7 +20,7 @@
 #contato .contato-title h2 {
   font-size: var(--h2);
   font-weight: var(--fs-b);
-  color: var(--color-03);
+  color: var(--color-01);
   font-family: var(--font-title);
 }
 
@@ -44,7 +45,6 @@
 
 #contato .contato-box-left {
   width: 40%;
-
   display: flex;
   flex-direction: column;
 }
@@ -54,7 +54,7 @@
 }
 
 #contato .contato-list li h3 {
-  color: var(--color-03);
+  color: var(--color-01);
   font-family: var(--font-title);
   font-size: var(--h3);
   font-weight: var(--fs-b);
@@ -65,18 +65,18 @@
 .contato-redes ion-icon {
   font-size: 2.5rem;
   cursor: pointer;
-  color: var(--color-02);
+  color: var(--color-01);
   transition: 0.1s ease-in-out;
 }
 
 .contato-redes ion-icon:hover {
-  color:var(--color-03);
+  color:var(--color-02);
 }
 
 #contato .contato-list p {
   font-size: var(--fs1);
   font-weight: var(--fs-m);
-  color: var(--color-02);
+  color: var(--color-01);
 
 }
 

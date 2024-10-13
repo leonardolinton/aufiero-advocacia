@@ -14,6 +14,7 @@
 @import url("./mapa.css");
 @import url("./footer.css");
 @import url("./saiba.css");
+@import url("./conecta.css");
 
 /*============ CONFIGURAÇÕES DEFAULT ============*/
 * {
@@ -45,7 +46,7 @@ main{
 
 /*========== SELEÇÃO =========*/
 ::selection {
-  background-color: var(--color-03);
+  background-color: var(--color-02);
   color: var(--color-01);
 }
 

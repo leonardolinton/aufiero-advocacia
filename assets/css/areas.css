@@ -74,7 +74,7 @@
 .diretos{
     width: 100%;
     min-height: 100vh;
-    padding-top: 10vh;
+    padding: 11vh 0 5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

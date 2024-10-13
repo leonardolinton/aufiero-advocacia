@@ -1,86 +1,90 @@
 const equipe = [
     {
         "id": "1",
-        "nome": "Aniello Miranda Aufiero",
+        "nome": "Aniello Aufiero",
         "registro": "OAB/AM 1.579",
-        "imagem": "../img/01_image.png",
+        "especialidades": "Criminal",
+        "email": "aufiero@aufiero.adv.br",
+        "imagem": "../img/advogado-01.jpg",
         "curriculo": [
-            "Sócio do Aufiero & Associados Advogados.",
-            "Graduado em Direito – Universidade Federal do Amazonas/UFAM (1986).",
-            "Professor de Direito Penal, Direito Processual Penal, Prática Penal, nas Faculdades, Cursos Preparatórios e Pós- graduação.",
+            "Graduado pela Universidade Federal do Amazonas – UFAM (1985).",
+            "Há mais de três décadas de experiência como advogado na área criminal em Manaus e Brasília e nos Tribunais Superiores (STJ e STF).",
+            "É sócio e fundador do escritório Aufiero & Associados Advogados.",
+            "Professor de Direito Penal e Processo Penal há mais de 30 anos.",
             "Conferencista e Autor de livros Jurídicos.",
-            "Membro associado do Instituto Brasileiro de Ciências Criminais – IBCCRIM",
-            "Membro associado do Instituto Brasileiro de Advogados – IAB"
+            "Integra a Academia de Ciências e Letras Jurídicas do Amazonas (2018).",
+            "Presidente do Instituto dos Advogados Brasileiros no Amazonas (IAB/AM) desde 2019.",
+            "Associado do Instituto Brasileiro de Ciências Criminais – IBCCRIM.",
+            "Foi Conselheiro Federal efetivo da Ordem dos Advogados do Brasil de 2019 a 2022.",
+            "Em 2010, foi o único representante do Amazonas a compor a lista Sêxtupla do Superior Tribunal de Justiça.",
+            "Laureado a Medalha Ruy Araújo pela Assembleia Legislativa do Estado do Amazonas (2019).",
+            "Medalha de Ouro Cidade de Manaus pela Câmara Municipal de Manaus (2022)."
         ]
     },
     {
         "id": "2",
-        "nome": "Aldenize Magalhães Aufiero",
+        "nome": "Denize Aufiero",
         "registro": "OAB/AM 1.874",
-        "imagem": "../img/02_image.png",
+        "especialidades": "Familiar",
+        "email": "aufiero@aufiero.adv.br",
+        "imagem": "../img/advogado-02.jpg",
         "curriculo": [
-            "Sócia de Aufiero & Associados Advogados.",
-            "Graduação em Direito – Universidade Federal do Amazonas/UFAM (1987).",
-            "Presidente da Caixa de Assistência dos Advogados do Amazonas (triênio 2016-2018)."
+            "Graduada pela Universidade Federal do Amazonas – UFAM (1987).",
+            "Há mais três décadas de experiência como advogada na área de Direito de Família.",
+            "É sócia e fundadora do escritório Aufiero & Associados Advogados.",
+            "Vice-presidente da Ordem dos Advogados do Amazonas (2022-2024).",
+            "Presidente da Câmara Especial da Seccional do Amazonas (2022-2024).",
+            "Presidente da Caixa de Assistência dos Advogados do Amazonas (CAAAM), por três mandados consecutivos, de 2013 a 2021.",
+            "Presidente da Coordenação Nacional das Caixas de Assistência dos Advogados-CONCAD de 2019 a 2021 e coordenadora na Região Norte.",
+            "Associada da Associação Brasileira das Mulheres De Carreira Jurídica (ABMCJ) da Região Norte - Membra do Instituto dos Advogados Brasileiros (IAB).",
+            "Idiomas: Espanhol"
         ]
     },
     {
         "id": "3",
-        "nome": "Danielle Aufiero Monteiro de Paula",
+        "nome": "Danielle Aufiero M. de Paula",
         "registro": "OAB/AM 6.945",
-        "imagem": "../img/03_image.png",
+        "especialidades": "Criminal e Familiar",
+        "email": "danielle@aufiero.adv.br",
+        "imagem": "../img/advogado-03.jpg",
         "curriculo": [
-            "Graduada em Direito – Centro Universitário do Norte/UNINORTE (2007)",
-            "Pós-graduada em Processo Judiciário pela Escola Superior de Advocacia (ESA/AM)",
-            "Corregedora da Ordem dos Advogados do Brasil, Seção Amazonas (triênio 2016-2018)"
+            "Graduada pelo Centro Universitário do Norte - UNINORTE (2007).",
+            "Pós-graduada em Processo Judiciário pela Escola Superior de Advocacia (ESA/AM).",
+            "Corregedora da Ordem dos Advogados do Brasil, Seção Amazonas (2016-2018).",
+            "Secretária-Geral da Ordem dos Advogados do Brasil, Seção Amazonas (2019-2021)."
+
         ]
     },
     {
         "id": "4",
         "nome": "Mario Vitor M. Aufiero",
         "registro": "OAB/AM 8.787",
-        "imagem": "../img/05_image.png",
+        "especialidades": "Cível e Improbidade Administrativa.",
+        "email": "mario@aufiero.adv.br",
+        "imagem": "../img/advogado-04.jpg",
         "curriculo": [
-            "Graduado em Direito – Universidade do Estado do Amazonas/UEA (2013)",
-            "Especialista em Direito Processual Civil – FDDJ (2015)",
-            "Mestrando em Direito Processual – USP",
-            "Idiomas: inglês fluente e italiano intermediário"
+            "Graduado pela Universidade do Estado do Amazonas – UEA (2013).",
+            "Doutor e mestre em Direito Processual pela Universidade de São Paulo - USP.",
+            "Professor adjunto da Universidade do Estado do Amazonas – UEA.",
+            "Advogado gestor do Aufiero & Associados Advogados.",
+            "Membro do Tribunal de Ética da Ordem dos Advogados do Brasil, Seccional Amazonas (2019-2022; 2022-2024).",
+            "Membro do Instituto Brasileiro de Direito Processual - IBDP.",
+            "Membro da Associação Brasileira de Direito Processual - ABDPRO.",
+            "Membro da Associação Norte e Nordeste de Professores de Processo - ANNEP.",
+            "Associate no CIArb.",
+            "Idiomas: Inglês e Italiano"
         ]
     },
     {
         "id": "5",
-        "nome": "Thaís Soares Tabosa dos Reis",
-        "registro": "OAB/AM 10.484",
-        "imagem": "../img/04_image.png",
+        "nome": "Adriana Gomes de Oliveira",
+        "registro": "OAB/AM 12.202",
+        "especialidades": "Cível e Consumidor",
+        "email": "adriana@aufiero.adv.br",
+        "imagem": "../img/advogado-05.jpg",
         "curriculo": [
-            "Graduada em Direito – Universidade Federal do Amazonas/UFAM (2015).",
-            "Estágio no escritório Aufiero & Associados (2014-2015);",
-            "Estágio Ministério Público do Estado do Amazonas (2012-2014);",
-            "Estágio Tribunal de Justiça do Estado do Amazonas (2010-2012).",
-            "Idiomas: Inglês fluente.",
-            "Interesse pessoal pelas áreas de relações públicas, política interna e internacional, direitos humanos, segurança pública, sistema prisional e gerenciamento de crise."
-        ]
-    },
-    {
-        "id": "6",
-        "nome": "Daniela Morgantini Tavares Tempesta",
-        "registro": "OAB/AM 8.411",
-        "imagem": "../img/07_image.png",
-        "curriculo": [
-            "Graduação Direito – Centro Integrado de Ensino Superior do Amazonas/CIESA (2012)",
-            "Pós-Graduanda em Direito Processual Civil – FDDJ",
-            "Idiomas: Inglês básico"
-        ]
-    },
-    {
-        "id": "7",
-        "nome": "Diego das Neves Loureiro",
-        "registro": "OAB/AM 11.271",
-        "imagem": "../img/08_image.png",
-        "curriculo": [
-            "Graduação em Direito – Centro Integrado de Ensino Superior do Amazonas/CIESA (2015)",
-            "Pós-graduando em Direito Penal e Processual Penal – CIESA",
-            "Idiomas: inglês básico"
+            "Graduada pela Escola Superior Batista do Amazonas - ESBAM (2015).",
+            "Pós-graduada em Direito Civil e Empresarial pela Universidade do Estado do Amazonas (2022)."
         ]
     }
 ];
@@ -98,6 +102,8 @@ if (advogado) {
     document.getElementById('advogado-img').alt = `${advogado.nome}`;
     document.getElementById('advogado-nome').textContent = advogado.nome;
     document.getElementById('advogado-registro').textContent = advogado.registro;
+    document.getElementById('advogado-especialidades').textContent = advogado.especialidades;
+    document.getElementById('advogado-email').textContent = advogado.email;
 
     const curriculoList = document.getElementById('advogado-curriculo');
     advogado.curriculo.forEach(curriculo => {
@@ -105,4 +111,5 @@ if (advogado) {
         li.textContent = curriculo;
         curriculoList.appendChild(li);
     });
+
 }

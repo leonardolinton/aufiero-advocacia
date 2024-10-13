@@ -20,7 +20,7 @@
     height: inherit;
     position: absolute;
     inset: 0;
-    background: #0000008a;
+    background: #000000a1;
 }
 
 .advogado-box {
@@ -48,7 +48,7 @@
 .advogado-box-left img {
     max-width: 400px;
     border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .advogado-box-right {
@@ -76,19 +76,29 @@
     text-shadow: black 0.1em 0.1em 0.2em;
 }
 
+.advogado-box-right h4{
+    font-size: var(--h4);
+    font-weight: var(--fs-b);
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
 
 .advogado-box-right li {
     font-size: var(--fs);
     list-style: inside;
     text-align: justify;
     list-style-position: initial;
-    text-shadow: black 0.1em 0.1em 0.2em;
     margin: 10px 0;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .advogado-box-right {
     list-style: disc;
+}
 
+.advogado-box-right p{
+    font-size: var(--fs1);
+    font-weight: var(--fs-m);
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .advogado-btn{
