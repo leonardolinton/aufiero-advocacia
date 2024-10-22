@@ -25,8 +25,8 @@
 }
 
 .areas-box-card{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     padding: 15px;
     border-radius: 5px;
     background-color: var(--color-02);
@@ -38,7 +38,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 15px;
     text-align: center;
     border-radius: 5px;
@@ -71,84 +71,10 @@
     opacity: 0.7;
 }
 
-.diretos{
-    width: 100%;
-    min-height: 100vh;
-    padding: 11vh 0 5vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
-}
-
-.diretos section{
-    max-width: var(--max-width);
-    padding: 0 5%;
-}
-
-.diretos-box{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 2.5vh;
-}
-
-.diretos-box-left{
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 2.5vh;
-}
-
-.diretos-box-left h1{
-    font-size: var(--h1);
-    font-family: var(--font-title);
-    font-weight: var(--fs-b);
-}
-
-.diretos-box-left p{
-    font-size: var(--fs1);
-    font-weight: var(--fs-m);
-    line-height: 150%;
-    text-align: justify;
-}
-
-.diretos-box-left a{
-    background-color: var(--color-03);
-    color: var(--color-01);
-    border-radius: 5px;
-    padding: 0.5rem 1.5rem;
-    font-family: var(--font-title);
-}
-
-.diretos-box-left a:hover{
-    opacity: 0.9;
-}
-
-.direito-box-right{
-    max-width: 500px;
-}
-
-.direito-box-right img{
-    width: 100%;
-}
-
 @media screen and (max-width: 1440px){
     #areas{
         padding: 11vh 0 5vh;
         overflow: hidden;
-    }
-
-    .diretos-box{
-        flex-direction: column-reverse;
-    }
-
-    .diretos-box-left{
-        width: 100%;
-        align-items: center;
     }
 
     .areas-box-cards{

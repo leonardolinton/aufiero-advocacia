@@ -22,7 +22,7 @@
     max-height: inherit;
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.308);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .home-box {
@@ -84,6 +84,9 @@
         gap: 2rem;
     }
 
+}
+
+@media (max-width: 900px) {
     .home-btn{
         width: 100%;
         text-align: center;

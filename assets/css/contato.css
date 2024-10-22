@@ -29,7 +29,6 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
-  
 }
 
 .contato-redes {
@@ -59,7 +58,7 @@
   font-size: var(--h3);
   font-weight: var(--fs-b);
   margin-bottom: 10px;
-  
+
 }
 
 .contato-redes ion-icon {
@@ -70,7 +69,7 @@
 }
 
 .contato-redes ion-icon:hover {
-  color:var(--color-02);
+  color: var(--color-02);
 }
 
 #contato .contato-list p {
@@ -173,6 +172,11 @@
     gap: 5vh;
   }
 
+  #contato .contato-box {
+    width: 100%;
+    padding: 0 5%;
+  }
+
   #contato .contato-title h2 {
     font-size: 2rem;
   }
@@ -181,21 +185,6 @@
     font-size: var(--fm3-font-size);
   }
 
-  #contato .contato-box {
-    width: 100%;
-    padding: 0 5%;
-    flex-direction: column;
-  }
-
-  #contato .contato-box-left {
-    width: 100%;
-  }
-
-  #contato .contato-box-right {
-    margin-top: 2.5vh;
-    padding: 10px;
-    width: 100%;
-  }
 
   #contato .contato-list li {
     display: flex;
@@ -230,9 +219,24 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 970px) {
+  #contato .contato-box {
+    flex-direction: column;
+  }
 
   .contato-redes ion-icon {
     font-size: 2rem;
+  }
+
+
+
+  #contato .contato-box-left {
+    width: 100%;
+  }
+
+  #contato .contato-box-right {
+    margin-top: 2.5vh;
+    padding: 10px;
+    width: 100%;
   }
 }
