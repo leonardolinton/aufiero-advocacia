@@ -7,13 +7,17 @@ document.getElementById('whatsappForm').addEventListener('submit', function (e) 
     let mensagem = document.getElementById('mensagem').value;
 
     // Montando a mensagem do WhatsApp
-    let textoMensagem = `Olá, meu nome: ${nome}.\nAssunto: ${assunto}.\nMensagem: ${mensagem}`;
+    let textoMensagem = `
+        Olá, sou: ${nome}.
+        \nAssunto: ${assunto}.
+        \nMensagem: ${mensagem}.
+    `;
 
     // Codificando a mensagem para que ela seja compatível com URLs
     let textoCodificado = encodeURIComponent(textoMensagem);
 
     // Número do WhatsApp para onde a mensagem será enviada (adicione o número desejado)
-    let numeroWhatsApp = '5521976590294'; // Substitua pelo número desejado com o código do país
+    let numeroWhatsApp = '559293624770'; // Substitua pelo número desejado com o código do país
 
     // URL do WhatsApp com a mensagem
     let urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${textoCodificado}`;
