@@ -25,7 +25,7 @@ const equipe = [
         "id": "2",
         "nome": "Denize Aufiero",
         "registro": "OAB/AM 1.874",
-        "especialidades": "Familiar",
+        "especialidades": "Família",
         "email": "aufiero@aufiero.adv.br",
         "imagem": "../img/advogado-02.jpg",
         "curriculo": [
@@ -44,7 +44,7 @@ const equipe = [
         "id": "3",
         "nome": "Danielle Aufiero M. de Paula",
         "registro": "OAB/AM 6.945",
-        "especialidades": "Criminal e Familiar",
+        "especialidades": "Criminal e Família",
         "email": "danielle@aufiero.adv.br",
         "imagem": "../img/advogado-03.jpg",
         "curriculo": [

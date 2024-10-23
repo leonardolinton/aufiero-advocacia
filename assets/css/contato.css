@@ -61,17 +61,6 @@
 
 }
 
-.contato-redes ion-icon {
-  font-size: 2.5rem;
-  cursor: pointer;
-  color: var(--color-01);
-  transition: 0.1s ease-in-out;
-}
-
-.contato-redes ion-icon:hover {
-  color: var(--color-02);
-}
-
 #contato .contato-list p {
   font-size: var(--fs1);
   font-weight: var(--fs-m);
@@ -135,7 +124,7 @@
 }
 
 #contato .contact-form .second-row input {
-  width: 49%;
+  width: 100%;
 }
 
 #contato .contact-form .form-btn {
@@ -151,7 +140,7 @@
 
   cursor: pointer;
 
-  font-size: 1rem;
+  font-size: var(--fs1);
   font-weight: 500;
   background-color: var(--color-01);
   color: var(--color-02);
@@ -161,6 +150,10 @@
 
 #contato .contact-form .form-btn:hover {
   border: solid 2px rgba(0, 0, 0, 0.568);
+}
+
+#contato .contact-form .form-btn ion-icon{
+  font-size: var(--h3);
 }
 
 /*============ CONTATO SECTION END ============*/
@@ -181,10 +174,6 @@
     font-size: 2rem;
   }
 
-  #contato .contato-title span {
-    font-size: var(--fm3-font-size);
-  }
-
 
   #contato .contato-list li {
     display: flex;
@@ -194,15 +183,8 @@
 
   #contato .contato-list li h3 {
     display: flex;
-
-    font-size: var(--fm2-font-size);
     font-weight: 600;
     margin-bottom: 5px;
-  }
-
-  #contato .contato-list span {
-    font-size: var(--fm3-font-size);
-    color: var(--secondary-color);
   }
 
   #contato .contact-form input,
@@ -212,11 +194,6 @@
     padding: 10px;
   }
 
-  #contato .contact-form .form-btn {
-    padding: 10px;
-    width: 100%;
-    font-size: var(--fm2-font-size);
-  }
 }
 
 @media screen and (max-width: 970px) {
