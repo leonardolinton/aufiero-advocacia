@@ -7,11 +7,7 @@ document.getElementById('whatsappForm').addEventListener('submit', function (e) 
     let mensagem = document.getElementById('mensagem').value;
 
     // Montando a mensagem do WhatsApp
-    let textoMensagem = `
-        Olá, sou: ${nome}.
-        \nAssunto: ${assunto}.
-        \nMensagem: ${mensagem}.
-    `;
+    let textoMensagem = `Olá, sou: ${nome}.\nAssunto: ${assunto}.\nMensagem: ${mensagem}.`;
 
     // Codificando a mensagem para que ela seja compatível com URLs
     let textoCodificado = encodeURIComponent(textoMensagem);
