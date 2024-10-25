@@ -78,7 +78,7 @@
     }
 
     .areas-box-cards{
-        gap: 3rem;
+        gap: 2rem;
     }
 }
 
@@ -91,7 +91,7 @@
     }
 
     .areas-box-card{
-        width: 90%;
+        width: 46%;
         height: 200px;
     }
 }

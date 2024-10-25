@@ -12,7 +12,6 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-blend-mode: screen;
-    /* filter: grayscale(100%); */
 
 }
 
@@ -22,7 +21,7 @@
     max-height: inherit;
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.479);
 }
 
 .home-box {
